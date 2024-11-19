@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 62,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 45,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
@@ -364,18 +364,21 @@
 			[
 				0,
 				1,
-				2
+				2,
+				8,
+				10,
+				13
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "ProyectoEstru1qtv_autogen::@6890427a1f51a3e7e1df"
+			"id" : "ProyectoEstru1qtv_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "ProyectoEstru1qtv_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "ProyectoEstru1qtv_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "ProyectoEstru1qtv::@6890427a1f51a3e7e1df",
@@ -487,7 +490,10 @@
 			[
 				0,
 				1,
-				2
+				2,
+				8,
+				10,
+				13
 			]
 		},
 		{
@@ -495,7 +501,13 @@
 			"sourceIndexes" : 
 			[
 				3,
-				5
+				5,
+				6,
+				7,
+				9,
+				11,
+				12,
+				14
 			]
 		},
 		{
@@ -503,14 +515,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				6
+				15
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				7
+				16
 			]
 		}
 	],
@@ -544,6 +556,54 @@
 			"backtrace" : 4,
 			"path" : "mainwindow.ui",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "Calle.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "Vehiculo.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "Mapa.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "Mapa.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "callet.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "callet.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "CalleSimple.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "CalleInter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "CalleInter.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,

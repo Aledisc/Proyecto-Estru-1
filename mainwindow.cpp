@@ -2,6 +2,7 @@
 #include "./ui_mainwindow.h"
 #include <random>
 
+#include "Mapa.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -14,6 +15,41 @@ MainWindow::MainWindow(QWidget *parent)
     ui->bframe4->setVisible(false);
     ui->bframe5->setVisible(false);
     ui->bframe6->setVisible(false);
+
+
+}
+
+void inicializarPaneles(QWidget* parent) {
+    // Ocultar paneles horizontales (autoposX_Y)
+    for (int x = 1; x <= 6; ++x) {         // Reemplaza 6 con el máximo número de filas horizontales
+        for (int y = 1; y <= 12; ++y) {    // Reemplaza 12 con el máximo número de columnas horizontales
+            QString nombreHorizontal = QString("autopos%1_%2").arg(x).arg(y);
+            QWidget* panelHorizontal = parent->findChild<QWidget*>(nombreHorizontal);
+            if (panelHorizontal) {
+                panelHorizontal->setVisible(false);
+            }
+
+            if (y ==2){
+                QString nombreHorizontal = QString("autpos%1_%2").arg(x).arg(y);
+                QWidget* panelHorizontal = parent->findChild<QWidget*>(nombreHorizontal);
+                if (panelHorizontal) {
+                    panelHorizontal->setVisible(false);
+                }
+            }
+        }
+
+    }
+
+    // Ocultar paneles verticales (autoposVX_Y)
+    for (int x = 1; x <= 6; ++x) {         // Reemplaza 6 con el máximo número de filas verticales
+        for (int y = 1; y <= 12; ++y) {    // Reemplaza 12 con el máximo número de columnas verticales
+            QString nombreVertical = QString("autoposV%1_%2").arg(x).arg(y);
+            QWidget* panelVertical = parent->findChild<QWidget*>(nombreVertical);
+            if (panelVertical) {
+                panelVertical->setVisible(false);
+            }
+        }
+    }
 }
 
 MainWindow::~MainWindow()
@@ -29,6 +65,12 @@ void MainWindow::on_pushButton_3_clicked()
 
 void MainWindow::on_pushButton_clicked()
 {
+    inicializarPaneles(this);
+    Mapa mapa(4,4);
+
+    mapa.inicializarTablero();
+    mapa.imprimirTablero();
+
     ui->stackedWidget->setCurrentIndex(1);
 }
 

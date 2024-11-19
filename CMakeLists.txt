@@ -23,6 +23,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(ProyectoEstru1qtv
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        Calle.h
+        Vehiculo.h
+        Mapa.h Mapa.cpp
+        CalleT.h CalleT.cpp
+        CalleSimple.h
+        CalleInter.h CalleInter.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET ProyectoEstru1qtv APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
